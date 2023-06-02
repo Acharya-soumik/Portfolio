@@ -9,6 +9,8 @@ export default function Header() {
     "https://www.facebook.com/soumik.acharya.7",
     "https://github.com/Acharya-soumik",
   ];
+  const url =
+    "https://drive.google.com/file/d/1IM7FT4Fms1ptkiH44rJBpAPEyXX_CUAB/view?usp=sharing";
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -57,11 +59,15 @@ export default function Header() {
       >
         <SocialIcon
           className="cursor-pointer"
-          url="https://drive.google.com/file/d/1IM7FT4Fms1ptkiH44rJBpAPEyXX_CUAB/view?usp=sharing"
+          url={url}
           fgColor="grey"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-black border p-3 rounded-xl bg-gray-200 hover:bg-white ">
+        <p
+          role="presentation"
+          onClick={() => window.open(url, "_blank", "noreferrer")}
+          className="uppercase hidden md:inline-flex text-sm text-black border p-3 rounded-xl bg-gray-200 hover:bg-white "
+        >
           Download My Resume
         </p>
       </motion.div>
