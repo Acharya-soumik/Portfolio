@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
 import CodingBro from "../pages/assets/images/CodingBro.svg";
