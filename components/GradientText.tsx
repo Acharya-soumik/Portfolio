@@ -20,7 +20,7 @@ const GradientText = () => {
         repeatType: "reverse",
       }}
     >
-      Hey there, I'm Soumik
+      Hey there, I&apos;m Soumik
     </motion.h1>
   );
 };
