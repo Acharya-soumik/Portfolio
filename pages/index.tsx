@@ -2,10 +2,10 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
 import SkillCard from "../components/SkillCard";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [expanded, setExpanded] = useState(false);
@@ -142,21 +142,21 @@ const Home = () => {
       <section id="experience" className="snap-start">
         <Experience />
       </section>
-      <section id="skills" className="snap-start bg-darkBlack">
+      <section id="skills" className="snap-start bg-darkBlack ">
         <div className="h-screen relative flex flex-col items-center justify-center min-h-screen py-6">
-          <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-100 text-xl md:text-2xl">
+          <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-100 text-xl md:text-2xl text-center shadow-md  shadow-fuchsia-300 px-2 py-4">
             My Frontend Skills
           </h3>
-          <div className="grid grid-cols-2 gap-y-16 md:grid-cols-2 lg:grid-cols-3 relative top-32">
+          <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 lg:grid-cols-3 relative top-32 max-h-[70vh] overflow-y-auto py-24 snap-y">
             {skills.map((skill: any, index: number) => (
               <SkillCard key={index} type={skill.type} data={skill.data} />
             ))}
           </div>
         </div>
       </section>
-      {/* <section id="contact" className="snap-start">
-        <ContactMe />
-      </section> */}
+      <section id="contact" className="snap-start">
+        <Footer />
+      </section>
     </div>
   );
 };

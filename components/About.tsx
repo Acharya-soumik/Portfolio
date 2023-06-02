@@ -43,21 +43,20 @@ export default function About() {
           background
         </h4>
         <p className="text-sm md:text-lg lg:text-lg text-justify">
-          I&apos;m a passionate Frontend Engineer with more then 3 years of
-          professional experience in the JavaScript and React realms. My
-          mission? Creating killer user interfaces. I&apos;ve got an eye for
-          detail and a knack for problem-solving. I stay up-to-date with the
-          latest trends because, you know, the web waits for no one!
+          I am a Frontend Engineer with over three years of professional
+          experience in the domains of JavaScript and React. My goal? Crafting
+          exceptional user interfaces that leave a lasting impression. <br />{" "}
+          With a keen eye for detail and a knack for troubleshooting, I strive
+          to stay on top of the latest trends, for the web waits for no one!
           <br />
-          <br /> I&apos;m from Siliguri, west bengal. Siliguri is a city in the
-          northeast Indian state of West Bengal. It sits in the foothills of the
-          Himalayas, surrounded by tea gardens.
-          <br />
-          I&apos;love to build products, and also trekking and hiking. I love
-          music too, and have learned to play a guitar,ukulele, piano and little
-          bit of drumming. <br />
-          <br />
-          You can reach out to me, I dig deep about all things FrontEnd
+          <br /> Hailing from the charming city of Siliguri in West Bengal,
+          India, nestled amidst the Himalayan foothills and surrounded by
+          verdant tea gardens, I am passionate about building innovative
+          products. <br /> When not coding away, you&apos;ll find me trekking
+          and hiking, or strumming my guitar, ukulele, piano, and even dabbling
+          in a bit of drumming. <br />
+          Feel free to reach out to me, as I relish exploring all things
+          FrontEnd.
         </p>
       </div>
     </motion.div>

@@ -19,6 +19,12 @@ export default function Experience() {
         "Created web views for Android and iOS users of the FamApp, serving a user base of over 10 million.",
         "Developed a goal-based savings app empowering users to save money and achieve their ﬁnancial objectives.",
         "Managed and maintained a custom Visa card ordering website with personalized name and graphic/doodle options, providing enhanced user experience and convenience.",
+        "Utilized Next.js and Tailwind CSS to create responsive layouts with optimized loading times, enhancing the user experience. Employed performance optimization techniques to ensure fast and efficient rendering of web pages.",
+        "Overseeing the recruitment of interns and evaluating their assignments to identify potential developers",
+        "Optimized website load times by improving image loading performance and dynamically reducing image sizes.",
+        "Utilized React Query on all projects with server state for efficient server state management and API caching within the application.",
+        "Collaborated with the DevOps team to streamline project deployment using Docker, leveraging Next.js optimizations for rapid development, testing, and deployment.",
+        "Migrated web project from CRA to Vite, enhancing development speed and resolving compatibility issues with older browsers.",
       ],
     },
     {
@@ -30,9 +36,8 @@ export default function Experience() {
       color: "#308bdc",
       image: Supplynote,
       roles: [
-        "Created web views for Android and iOS users of the FamApp, serving a user base of over 10 million.",
-        "Developed a goal-based savings app empowering users to save money and achieve their ﬁnancial objectives.",
-        "Managed and maintained a custom Visa card ordering website with personalized name and graphic/doodle options, providing enhanced user experience and convenience.",
+        "Developed a bulk upload feature enabling efficient onboarding of thousands of product items from Excel sheets, saving significant time and effort.Added functionality to bulk upload thousands of product item data using Excel sheets which heavily reduced the time and effort needed in product onboarding.",
+        "Implemented integration with RazorPay X for seamless B2B payment processing, while also ensuring a user-friendly and intuitive UI/UX.",
       ],
     },
 
@@ -45,9 +50,9 @@ export default function Experience() {
       image: Gnani,
       summary: "string",
       roles: [
-        "Created web views for Android and iOS users of the FamApp, serving a user base of over 10 million.",
-        "Developed a goal-based savings app empowering users to save money and achieve their ﬁnancial objectives.",
-        "Managed and maintained a custom Visa card ordering website with personalized name and graphic/doodle options, providing enhanced user experience and convenience.",
+        "Created website landing page",
+        "Identified and fixed product voice to text recognition module on website",
+        "Created Multiple Dashboards showing reports for sales calls with efficient loading time.",
       ],
     },
   ];
@@ -62,44 +67,43 @@ export default function Experience() {
         Experience
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-dark Green/80">
+      <div className="relative md:top-20 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-dark Green/80">
         {projects?.map((project, i) => (
           <div
             key={project._id}
-            className="min-w-full md:min-w-[70%] snap-center flex flex-col md:p-10  mx-11 relative top-36 md:top-0"
+            className="min-w-full shadow shadow-white md:min-w-[60%] snap-start md:snap-center flex flex-col  mx-11 relative rounded-xl p-8"
           >
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
-              className="bg-darkBlack flex mr-auto rounded-2xl p-10 sm:shadow-inner sm:shadow-white"
+              className="bg-darkBlack flex mr-auto rounded-2xl p-10  shadow-inner  shadow-white"
               viewport={{ once: true }}
             >
               <Image
-                className={`h-[50px] md:h-[150px] w-auto ${
-                  i === 2 ? "rounded-full" : null
-                }`}
+                className="h-[40px] md:h-[50px] w-auto"
                 src={project.image}
                 alt=""
               />
             </motion.div>
-
-            <div className="py-14 rounded-xl">
+            <br />
+            <div className="rounded-xl">
               <h4
                 style={{
                   color: project.color,
                 }}
-                className="text-lg md:text-2xl lg:text-4xl font-semibold"
+                className="text-lg md:text-2xl lg:text-4xl font-semibold p-3"
               >
                 {project?.title}
               </h4>
               <div className="flex items-center space-x-2"></div>
-              <ul className="my-4 overflow-y-auto max-h-[70%] pb-8">
+              <ul className="my-4 overflow-y-auto pb-8 max-h-[20vh] snap-y">
                 {project.roles.map((item, idx) => (
                   <li
-                    className="list-none my-1  uppercase text-white pb-2"
+                    className=" my-1  uppercase text-white pb-2 flex items-start snap-mandatory snap-start"
                     key={idx}
                   >
+                    <span className="mx-2 text-white">*</span>{" "}
                     <p className="text-xs md:text-sm lg:text:md">{item}</p>
                   </li>
                 ))}

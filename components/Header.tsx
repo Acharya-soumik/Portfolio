@@ -35,7 +35,7 @@ export default function Header() {
             key={social}
             url={social}
             fgColor="white"
-            bgColor="gray"
+            bgColor="black"
             className="mx-2"
           />
         ))}
@@ -55,20 +55,20 @@ export default function Header() {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center text-gray-100 cursor-pointer"
       >
         <SocialIcon
           className="cursor-pointer"
           url={url}
-          fgColor="grey"
+          fgColor="black"
           bgColor="transparent"
         />
         <p
           role="presentation"
           onClick={() => window.open(url, "_blank", "noreferrer")}
-          className="uppercase hidden md:inline-flex text-sm text-black border p-3 rounded-xl bg-gray-200 hover:bg-white "
+          className="hidden px-6 md:inline-flex text-sm text-black border p-3 rounded-full border-black hover:bg-darkBlack hover:text-white transition-all delay-75 ease-in-out "
         >
-          Download My Resume
+          Resume
         </p>
       </motion.div>
     </header>
